@@ -1,0 +1,43 @@
+{
+    "name": "rnr1721/le7-taxonomy",
+    "description": "Simple Taxonomy interfaces (Wordpress-like taxonomy) for Le7 PHP MVC framework or any PHP 8 project",
+    "keywords": ["le7", "le7-framework", "framework", "wordpress", "taxonomy", "terms", "component"],
+    "authors": [
+        {
+            "name": "Eugeny G",
+            "email": "rnr1721@gmail.com",
+            "homepage": "https://github.com/rnr1721",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Core\\Interfaces\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.7",
+        "phpunit/phpunit": "^10.0"
+    },
+    "conflict": {
+    },
+    "scripts": {
+        "test": [
+            "@phpunit",
+            "@psalm"
+        ],
+        "phpunit": "phpunit",
+        "psalm": "psalm"
+    }
+}
